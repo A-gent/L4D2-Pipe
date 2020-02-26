@@ -1,6 +1,5 @@
-new Handle:p_Notify = INVALID_HANDLE;
+new Handle:p_Notify = INVALID_HANDLE;   // https://forums.alliedmods.net/showthread.php?t=154094
  
-  // https://forums.alliedmods.net/showthread.php?t=154094
 public OnPluginStart()
 {
 	p_Notify = CreateConVar("sm_core_notify", "sv_gravity, sv_airaccelerate, sv_wateraccelerate, sv_alltalk, mp_limitteams, sv_cheats, god, director_afk_timeout", "Setting: List of cvars, comma limited, to strip notifications from.");
