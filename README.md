@@ -1,10 +1,12 @@
 # L4D2-ConfigHandler-SourcePawn
+ADDENDUM
 Custom L4D2 Sourcemod ConVars and Config Pipe
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+***
+CHECKLIST
+- [x] Basic Shell
+- [x] Strip Notification Prints off clamp_ai ConVars
+- [ ] Test Strip_DevOnly Module
+- [ ] Add Piping Commands for ConfigHandler
 
 ***
 
