@@ -1,4 +1,4 @@
-# L4D2-ConfigHandler-SourcePawn
+# PIPE [L4D2]
 ADDENDUM
 ```
 Custom L4D2 Sourcemod ConVars and Config Pipe
