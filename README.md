@@ -5,6 +5,7 @@ Custom L4D2 Sourcemod ConVars and Config Pipe
 CHECKLIST
 - [x] Basic Shell
 - [x] Strip Notification Prints off clamp_ai ConVars
+- [x] 'clamp_ai' alias integration
 - [ ] Test Strip_DevOnly Module
 - [ ] Add Piping Commands for ConfigHandler
 
