@@ -18,8 +18,8 @@ CHECKLIST
 
 CONTROL | BUILD
 ------------ | -------------
-Established basic Shell (Pre-Pilot) | 0.008.721a
-Created the pilot ConVar - sm_testpipe (Pilot) | 0.008.721a
+Established basic Shell                  (Pre-Pilot) | 0.008.721a
+Created the pilot ConVar - sm_testpipe   (Pilot) | 0.008.721a
 The Strip_Notify plugin suppresses the chat print of the sv_cheats, god, and any other commands so they don't appear in chat when changed | 0.008.821a
 The Strip_DevOnly plugin is experimental and untested, but it could strip FCVAR_DEVELOPMENTONLY flags from specified commands | 0.008.821a
 The Server Commands now outputs client-side messages, with color | 0.008.829a
