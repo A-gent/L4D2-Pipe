@@ -2,7 +2,11 @@
 Custom L4D2 Sourcemod ConVars and Config Pipe
 
 
-# VERSION CONTROL
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 ***
 The Strip_Notify plugin suppresses the chat print of the sv_cheats, god, and any other commands so they don't appear in chat when changed
 
