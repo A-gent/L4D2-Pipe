@@ -12,6 +12,7 @@ CHECKLIST
 - [ ] Test Strip_DevOnly Module
 - [ ] Add Piping Commands for ConfigHandler
 - [ ] Incorporate the Auto Greeting Message from the 'pipe_test' example
+- [ ] Make most client-side Print responses global using the example from the 'testglobal' ConVar
 
 ***
 
