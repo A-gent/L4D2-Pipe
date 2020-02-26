@@ -11,6 +11,7 @@ COMPLETION
 - [x] Add colored server message print responses on execution of custom Pipe ConVars
 
 ***
+# ConVars
 
 COMMAND | DESCRIPTION
 ------------ | -------------
