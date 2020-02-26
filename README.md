@@ -23,7 +23,7 @@ testglobal | Test Print Global Server-wide ChatPrint
 pipe | Forces the given CVar(s) to be executed on given clients
 
 ***
-
+<p align="center">
 [VIEW ROOT](https://github.com/A-gent/L4D2-Pipe)
-
+</p>
 
