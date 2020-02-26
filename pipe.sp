@@ -49,16 +49,19 @@ public void OnPluginStart()
 	//
 	//  TEST
 	RegConsoleCmd("testglobal", Command_TestGlobalPrint, "- Prints a global message from the server to all clients");
+	//RegConsoleCmd("testglobalsnd", Command_TestGlobalSound, "- Uses Playgamesound command through the CfgPipe CVar Forcer on all active clients");
 }
  //  AI
  public Action:Command_ClampAI(client, args)
 {
 		//ServerCommand("sv_cheats 1");
+		ServerCommand("pipe_ai_locked");  //  Play sound on AI disable
 		ServerCommand("clamp_ai");
-		ServerCommand("director_afk_timeout 9999");   // Humans idle longer than this many seconds will be forced to spectator mode
-		ServerCommand("sv_spectatoridletime 9999");   // Humans idle longer than this many seconds will be forced to spectator mode
+		ServerCommand("director_afk_timeout 9999999999999");   // Humans idle longer than this many seconds will be forced to spectator mode
+		ServerCommand("sv_spectatoridletime 9999999999999");   // Humans idle longer than this many seconds will be forced to spectator mode
+		ServerCommand("allow_all_bot_survivor_team 1");   // Allow bot team
 		//PrintToServer("Test Command Has Fired");
-		PrintToChat(client, "\x05 [Pipe]:  \x03 AI Clamped");
+		PrintToChat(client, "\x05 [Pipe]:  \x03 AI \x04 Clamped");
 		//PrintToChat("Test Command Has Fired");
 		return Plugin_Handled;
 }
@@ -66,25 +69,27 @@ public void OnPluginStart()
  public Action:Command_UnclampAI(client, args)
 {
 		//ServerCommand("sv_cheats 1");
+		ServerCommand("pipe_ai_unlocked");  //  Play sound on AI enable
 		ServerCommand("declamp_ai");
-		ServerCommand("director_afk_timeout 45");    // Humans idle longer than this many seconds will be forced to spectator mode
-		ServerCommand("sv_spectatoridletime 3");    // Humans idle longer than this many seconds will be forced to spectator mode
+		ServerCommand("director_afk_timeout 45");         // Humans idle longer than this many seconds will be forced to spectator mode
+		ServerCommand("sv_spectatoridletime 3");          // Humans idle longer than this many seconds will be forced to spectator mode
+		//ServerCommand("allow_all_bot_survivor_team 0"); // Deny bot-only survivor team scenario
 		//PrintToServer("Test Command Has Fired");
-		PrintToChat(client, "\x05 [Pipe]:  \x03 AI Unclamped");
+		PrintToChat(client, "\x05 [Pipe]:  \x03 AI \x04 Unclamped");
 		//PrintToChat("Test Command Has Fired");
 		return Plugin_Handled;
 }
 //  CHEATS
  public Action:Command_CheatsOn(client, args)
 {
-		PrintToChat(client, "\x05 [Pipe]:  \x03 CHEATS ENABLED");
+		PrintToChat(client, "\x05 [Pipe]:  \x03 CHEATS \x04 ENABLED");
 		ServerCommand("sv_cheats 1");
 		return Plugin_Handled;
 }
 
  public Action:Command_CheatsOff(client, args)
 {
-		PrintToChat(client, "\x05 [Pipe]:  \x03 CHEATS DISABLED");
+		PrintToChat(client, "\x05 [Pipe]:  \x03 CHEATS \x04 DISABLED");
 		ServerCommand("sv_cheats 0");
 		return Plugin_Handled;
 }
@@ -92,7 +97,7 @@ public void OnPluginStart()
  public Action:Command_TestGlobalPrint(client, args)
 {
 		//PrintToServer("[CFGPIPE]:  THIS IS A GLOBAL STRINGPRINT");
-		PrintToChatAll ("\x05 [Pipe]:  \x03 THIS IS A GLOBAL STRINGPRINT");  // Though the actual colors will vary depending on the mod, you can add color to any chat message using the characters 0x01 to 0x08.
+		PrintToChatAll ("\x05 [Pipe]:  \x03 THIS IS A \x04 GLOBAL STRINGPRINT");  // Though the actual colors will vary depending on the mod, you can add color to any chat message using the characters 0x01 to 0x08.
 		//PrintToChatAll ("\x01 1 .. \x02 2 .. \x03 3 .. \x04 4 .. \x05 5 .. \x06 6 .. \x07 7 .. \x08 8");  // Though the actual colors will vary depending on the mod, you can add color to any chat message using the characters 0x01 to 0x08.
 		return Plugin_Handled;
 }
