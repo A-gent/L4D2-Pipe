@@ -26,7 +26,6 @@ pipe | Forces the given CVar(s) to be executed on given clients
 <p align="center">
  <b>[VIEW ROOT]: <br>
   <a href="#">https://github.com/A-gent/L4D2-Pipe</a> 
-[I'm an inline-style link with title](https://github.com/A-gent/L4D2-Pipe)
   </b>
 </p>
 
