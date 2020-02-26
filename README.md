@@ -1,4 +1,4 @@
-# L4D2-Pipe
+# Pipe
 ADDENDUM
 ```
 Custom L4D2 Sourcemod ConVars and Config Pipe
