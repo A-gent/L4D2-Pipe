@@ -24,4 +24,4 @@ testglobal | Test Print Global Server-wide ChatPrint
 ***
 
 # Container
-[link text itself]: http://www.reddit.com
+[VIEW REPO](https://github.com/A-gent/L4D2-Pipe)
