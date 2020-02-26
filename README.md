@@ -8,6 +8,7 @@ CHECKLIST
 - [x] Basic Shell
 - [x] 'clamp_ai' alias integration
 - [x] Strip Notification Prints off 'clamp_ai' ConVars
+- [x] Add colored server message print responses on execution of custom Pipe ConVars
 - [ ] Test Strip_DevOnly Module
 - [ ] Add Piping Commands for ConfigHandler
 - [ ] Incorporate the Auto Greeting Message from the 'pipe_test' example
