@@ -8,7 +8,7 @@ CHECKLIST
 
 ***
 
-CONTROL | PILOT
+CONTROL | BUILD
 ------------ | -------------
-Established basic Shell | X
-Created the pilot ConVar - sm_testpipe | X
+Established basic Shell | 0.008.721a
+Created the pilot ConVar - sm_testpipe | 0.008.721a
