@@ -10,6 +10,7 @@ CHECKLIST
 - [x] Strip Notification Prints off 'clamp_ai' ConVars
 - [ ] Test Strip_DevOnly Module
 - [ ] Add Piping Commands for ConfigHandler
+- [ ] Incorporate the Auto Greeting Message from the 'pipe_test' example
 
 ***
 
@@ -19,4 +20,4 @@ The Strip_Notify plugin suppresses the chat print of the sv_cheats, god, and any
 The Strip_DevOnly plugin is experimental and untested, but it could strip FCVAR_DEVELOPMENTONLY flags from specified commands | 0.008.821a
 The Server Commands now outputs client-side messages, with color | 0.008.829a
 The 'testglobal' ConVar outputs a global message to all connected clients, with color | 0.008.829a
-The 'pipe_test.sp' plugin waits for newly connected clients to fully join the server, then it display a client-side message to greet them | 0.008.829a
+The 'pipe_test.sp' plugin waits for newly connected clients to fully join the server, then it displays a client-side message to greet them | 0.008.829a
