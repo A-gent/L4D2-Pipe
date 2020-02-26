@@ -20,6 +20,7 @@ cheats0 | Disables Cheats
 ai_on | Enables AI (stops the war-room state)
 ai_off | Disables AI (starts the war-room state)
 testglobal | Test Print Global Server-wide ChatPrint
+pipe | Forces the given CVar(s) to be executed on given clients
 
 ***
 
