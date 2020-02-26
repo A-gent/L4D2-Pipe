@@ -1,5 +1,5 @@
 # Pipe
-ADDENDUM
+
 ```
 Custom L4D2 Sourcemod ConVars and Config Pipe
 ```
