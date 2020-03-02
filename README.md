@@ -20,6 +20,7 @@ cheats0 | Disables Cheats
 ai_on | Enables AI (stops the war-room state)
 ai_off | Disables AI (starts the war-room state)
 pipe | Forces the given CVar(s) to be executed on given clients
+bhop | Toggles client-side automated bhop
 restartmap | Restarts the current map
 testglobal | Test Print Global Server-wide ChatPrint
 test_offlinevs_on | Executes COOP Local Versus match
