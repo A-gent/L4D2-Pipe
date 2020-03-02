@@ -25,7 +25,7 @@ public OnPluginStart ()
     CreateConVar ("sm_pipeforce_version", PLUGIN_VERSION, "CfgPipe CVar Forcer version", FCVAR_PLUGIN | FCVAR_SPONLY | FCVAR_REPLICATED | FCVAR_NOTIFY);
     /* register the sm_pipe console command */
     RegAdminCmd ("sm_pipe", ClientExec, ADMFLAG_RCON);
-	RegConsoleCmd("pipe", ClientExec, "- Pipe ");
+	RegConsoleCmd("pipe", ClientExec, "- Pipe");
 }
 
 public Action:ClientExec (client, args)
@@ -51,6 +51,7 @@ public Action:ClientExec (client, args)
                         FakeClientCommand (iClient, szCommand);
                     else
                         ClientCommand (iClient, szCommand);
+                        FakeClientCommand (iClient, szCommand);
                 }
             }
         }
