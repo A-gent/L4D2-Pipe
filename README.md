@@ -25,5 +25,5 @@ The Strip_DevOnly plugin is experimental and untested, but it could strip FCVAR_
 -The Server Commands now outputs client-side messages, with color | 0.008.829a
 The 'testglobal' ConVar outputs a global message to all connected clients, with color | 0.008.829a
 The 'pipe_test.sp' plugin waits for newly connected clients to fully join the server, then it displays a client-side message to greet them | 0.008.829a
--The 'pipe_cvar_forcer' plugin forces all clients connected to execute the given CVars | 0.008.909a
-The 'ai_on' and 'ai_off' now use the 'pipe_cvar_forcer' to play a sound for all connected clients when on/off state changed | 0.008.909a
+-The 'pipe_cvar_forcer' plugin forces all clients connected to execute the given CVars | **0.008.909a**
+The 'ai_on' and 'ai_off' now use the 'pipe_cvar_forcer' to play a sound for all connected clients when on/off state changed | **0.008.909a**
