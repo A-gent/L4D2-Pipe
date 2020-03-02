@@ -9,6 +9,7 @@ COMPLETION
 - [x] 'clamp_ai' alias integration
 - [x] Strip Notification Prints off 'clamp_ai' ConVars
 - [x] Add colored server message print responses on execution of custom Pipe ConVars
+- [x] Merged BHOP and SM_RESTARTMAP plugins into the main PIPE
 
 ***
 
