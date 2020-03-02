@@ -19,8 +19,11 @@ cheats1 | Enables Cheats
 cheats0 | Disables Cheats
 ai_on | Enables AI (stops the war-room state)
 ai_off | Disables AI (starts the war-room state)
-testglobal | Test Print Global Server-wide ChatPrint
 pipe | Forces the given CVar(s) to be executed on given clients
+restartmap | Restarts the current map
+testglobal | Test Print Global Server-wide ChatPrint
+test_offlinevs_on | Executes COOP Local Versus match
+test_offlinevs_off | Unloads COOP Local Versus match
 
 ***
 <p align="center">
