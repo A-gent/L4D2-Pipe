@@ -8,16 +8,20 @@ COMPLETION
 - [x] Basic Shell
 - [x] 'clamp_ai' alias integration
 - [x] Strip Notification Prints off 'clamp_ai' ConVars
-- [x] Add colored server message print responses on execution of custom Pipe ConVars
-- [x] Merged BHOP and SM_RESTARTMAP plugins into the main PIPE
+- [x] Added colored server message print responses on execution of custom Pipe ConVars
+- [x] Added Re-Execute Server.cfg ConVars
+- [x] Merged BHOP plugin into the main PIPE
+- [x] Merged SM_RESTARTMAP plugin into the main PIPE
+- [x] Merged L4D_TANK_DAMAGE_ANNOUNCE plugin into the main PIPE
+- [ ] Merged L4D_CUSTOM_COMMANDS plugin into the main PIPE
 
 ***
 # ConVars
 
 COMMAND | DESCRIPTION
 ------------ | -------------
-cheats1 | Enables Cheats
-cheats0 | Disables Cheats
+cheats1 | Enables Cheats - same aliases = !cheats, !cheat
+cheats0 | Disables Cheats - same aliases = !nocheats, !nocheat
 ai_on | Enables AI (stops the war-room state)
 ai_off | Disables AI (starts the war-room state)
 pipe | Forces the given CVar(s) to be executed on given clients
