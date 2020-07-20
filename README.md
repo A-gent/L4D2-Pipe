@@ -30,6 +30,7 @@ restartmap | Restarts the current map
 testglobal | Test Print Global Server-wide ChatPrint
 test_offlinevs_on | Executes COOP Local Versus match
 test_offlinevs_off | Unloads COOP Local Versus match
+fix | Re-Loads the Server.cfg file - same aliases = !command, !commands, !hotfix, !server, !srv, !repipe, !rerun
 
 ***
 <p align="center">
