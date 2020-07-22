@@ -162,12 +162,18 @@ public void OnPluginStart()
 	//
 	// RE-EXECUTE SERVER.CFG
 	//////////////////////////////////////////////////////////////////////////////////////////
-	RegConsoleCmd("srv", Command_ExecServerCfg, "- Reload Server.cfg");
-	RegConsoleCmd("fix", Command_ExecServerCfg, "- Reload Server.cfg");
-	RegConsoleCmd("hotfix", Command_ExecServerCfg, "- Reload Server.cfg");
-	RegConsoleCmd("server", Command_ExecServerCfg, "- Reload Server.cfg");
-	RegConsoleCmd("repipe", Command_ExecServerCfg, "- Reload Server.cfg");
 	RegConsoleCmd("rerun", Command_ExecServerCfg, "- Reload Server.cfg");
+	RegConsoleCmd("server", Command_ExecServerCfg, "- Reload Server.cfg");
+	RegConsoleCmd("serv", Command_ExecServerCfg, "- Reload Server.cfg");
+	RegConsoleCmd("srv", Command_ExecServerCfg, "- Reload Server.cfg");
+	RegConsoleCmd("srv", Command_ExecServerCfg, "- Reload Server.cfg");
+	
+	RegConsoleCmd("netcode_reload", Command_NetCodeFixCfg, "- Load NetCodeFix.cfg");
+	RegConsoleCmd("netcode", Command_NetCodeFixCfg, "- Load NetCodeFix.cfg");
+	RegConsoleCmd("netfix", Command_NetCodeFixCfg, "- Load NetCodeFix.cfg");
+	RegConsoleCmd("fix", Command_NetCodeFixCfg, "- Load NetCodeFix.cfg");
+	
+	RegConsoleCmd("hotfix", Command_HotFixCfg, "- Load Hotfix.cfg");
 	//
 	// L4D2 TANK ANNOUNCE DAMAGE
 	//////////////////////////////////////////////////////////////////////////////////////////
@@ -720,7 +726,25 @@ public SortByDamageDesc(elem1, elem2, const array[], Handle:hndl)
 {
 		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTING \x04 [SERVER.CFG]...");
 		ServerCommand("exec server.cfg");
-		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTED \x04 [SERVER.CFG]");
+//		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTED \x04 [SERVER.CFG]");
+		return Plugin_Handled;
+}
+//  EXECUTE NETCODE_FIX.CFG
+ //////////////////////////////////////////////////////////////////////////////////////////
+ public Action:Command_NetCodeFixCfg(client, args)
+{
+		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTING \x04 [NETCODE_FIX.CFG]...");
+		ServerCommand("exec netcode_fix.cfg");
+//		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTED \x04 [SERVER.CFG]");
+		return Plugin_Handled;
+}
+//  EXECUTE HOTFIX.CFG
+ //////////////////////////////////////////////////////////////////////////////////////////
+ public Action:Command_HotFixCfg(client, args)
+{
+		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTING \x04 [HOTFIX.CFG]...");
+		ServerCommand("exec hotfix.cfg");
+//		PrintToChatAll ("\x05 [Pipe]:  \x03 EXECUTED \x04 [SERVER.CFG]");
 		return Plugin_Handled;
 }
 //  TURN ON OFFLINE VERSUS
